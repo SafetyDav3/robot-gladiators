@@ -49,8 +49,21 @@ var fight = function () {
       playerHealth +
       " health remaining!"
   );
+
+  // Check player health
+  if (playerHealth <= 0) {
+    window.alert(playerName + " has died!");
+  } else {
+    window.alert(playerName + " has " + playerHealth + " health left.");
+  }
+
+  // Check enemy health
+  if (enemyHealth <= 0) {
+    window.alert(enemyName + " has died!");
+  } else {
+    window.alert(enemyName + " still has " + enemyHealth + " health left.");
+  }
 };
 
 // ↓↓↓ Calling the fight function ↓↓↓
-
 fight();
